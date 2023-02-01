@@ -33,9 +33,10 @@ const NewsList = () => {
       React and Tailwind CSS in action
     </p>
   </div>
+  </>
   );
 
-  </>
+ 
 }
 
 export default NewsList;
