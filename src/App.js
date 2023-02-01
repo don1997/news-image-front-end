@@ -1,5 +1,19 @@
+import React, { useState, useEffect } from 'react';
 
-function App() {
+const NewsList = () => {
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=3bc498625c324399abae4f472f7fa3af`)
+      .then(response => response.json())
+      .then(data => setNews(data.articles))
+      .catch(error => console.error(error));
+
+  }, []);
+
+
+
+
   return (
 
     
