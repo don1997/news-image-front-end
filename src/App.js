@@ -28,6 +28,8 @@ const NewsList = () => {
 
      
 <div class="columns-2 md:columns-3 lg:columns-4">
+{news.map(article => (
+
   <div class="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
     <img class="w-full rounded-md" src="https://source.unsplash.com/random/1"/>
     <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
@@ -41,6 +43,8 @@ const NewsList = () => {
       </div>
     </div>
   </div>
+        ))}
+
   </div>
 
 
