@@ -28,4 +28,4 @@ const NewsList = () => {
   );
 }
 
-export default App;
+export default NewsList;
