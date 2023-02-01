@@ -23,24 +23,26 @@ const NewsList = () => {
           <h1 className="text-xl font-bold text-white
           text-center mb-4">News-Text</h1>
         </div>
-      </div>
+</div>
   
 
-      <div className="columns-2 md:columns-3 lg:columns-4">
-        {news.map(article => (
-          <div className="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
-            <img className="w-full h-full rounded-md" src={article.urlToImage}/>
-            <div className="absolute inset-0 bg-black left-0 top-0 flex flex-col items-center justify-center opacity-0 hover:opacity-60 bg-opacity-90 duration-300">
-              <div className="relative">
-                <a className="test__link absolute inset-0" target="_blank" href={article.url}></a>
-                <h1 className="test__title text-orange-300 text-xs md:text-sm lg:text-xl font-bold mb-3">{article.title}</h1>
-              </div>
-
-            </div>
-          </div>
-
-        ))}
+     
+<div class="columns-2 md:columns-3 lg:columns-4">
+  <div class="relative mb-4 before:content-[''] before:rounded-md before:absolute before:inset-0 before:bg-black before:bg-opacity-20">
+    <img class="w-full rounded-md" src="https://source.unsplash.com/random/1"/>
+    <div class="test__body absolute inset-0 p-8 text-white flex flex-col">
+      <div class="relative">
+        <a class="test__link absolute inset-0" target="_blank" href="/"></a>
+        <h1 class="test__title text-3xl font-bold mb-3">Title post</h1>
+        <p class="test__author font-sm font-light">Author</p>
       </div>
+      <div class="mt-auto">
+        <span class="test__tag bg-white bg-opacity-60 py-1 px-4 rounded-md text-black">#tag</span>
+      </div>
+    </div>
+  </div>
+  </div>
+
 
   </>
   );
